@@ -1,9 +1,19 @@
-variable "resource-group-name" {
-  type        = string
-  description = "Name of the resource group to create"
+variable "vnet_name" {
+  type = string
+  description = "net_vnet_name"
 }
 
-variable "storageaccountname" {
-  type        = string
-  description = "Name of the storage account to create"
+variable "address_space" {
+  type = string
+	description = "net_vnet_address_space"
+}
+
+variable "resource_group_name" {
+	type = string
+	description = "net_vnet_resource_group_name"
+}
+
+variable "location" {
+	type = string
+	description = "net_vnet_location"
 }
